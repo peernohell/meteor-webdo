@@ -1,4 +1,4 @@
-Gifts = new Meteor.Collection("gifts");
+Gifts = new Mongo.Collection("gifts");
 
 Gifts.attachSchema({
   title: {
@@ -76,11 +76,11 @@ if (Meteor.isClient) {
 //  T9n.missingPrefix = ">";
 //  T9n.missingPostfix = "<";
 
-  Accounts.ui.config({passwordSignupFields: 'USERNAME_ONLY'});
+  //Accounts.ui.config({passwordSignupFields: 'USERNAME_ONLY'});
 
   AccountsEntry.config({
-    homeRoute: '/',
-    passwordSignupFields: 'USERNAME_ONLY'});
+    homeRoute: '/'/*,
+    passwordSignupFields: 'USERNAME_ONLY'*/});
   
   Router.map(function() {
     this.route('home', {path: '/'});

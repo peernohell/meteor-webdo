@@ -13,9 +13,8 @@ accounts-password
 houston:admin
 mquandalle:jade
 aldeed:collection2
-joshowens:accounts-entry
 aldeed:autoform
 joshowens:simple-form
 iron:router
 aldeed:simple-schema
-
+vilango:accounts-entry
